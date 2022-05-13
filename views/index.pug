@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+           div#logo 
+            img(src="static/Images/logo_main.jpg")
+           li #[a(href="/") Home]
+           li #[a(href="/") About]
+           li #[a(href="/") Services]
+           li #[a(href="/") Class Info]
+           li #[a(href="/") Contact Us]
+
+    section#introSection 
+             div Welcome To Dance Academy 
+             div.small Dance And Enjoy
+
+    section#missionSection 
+            h2 Our Mission 
+            div.card 
+                h3 Dance Perfection
+                div.card-box 
+                  div.card-img
+                    img(src="static/Images/logo_main.jpg")
+                  div.card-content 
+                    p This is the best Dance Academy
+
+            div.card 
+                h3 Dance The Way You Like
+                div.card-box 
+                  div.card-img
+                    img(src="static/Images/logo_main.jpg")
+                  div.card-content 
+                    p This is the best Dance Academy
+
+            div.card 
+                h3 Expert Teaching
+                div.card-box 
+                  div.card-img
+                    img(src="static/Images/logo_main.jpg")
+                  div.card-content 
+                    p This is the best Dance Academy
+
+    section#sponsorsSection 
+             h2 Our Sponsers
+             div#sponsors 
+                img(src="static/Images/spimg1.jpg", alt="SponsorImage", class="spImage")
+                img(src="static/Images/spimg1.jpg", alt="SponsorImage", class="spImage")
+                img(src="static/Images/spimg1.jpg", alt="SponsorImage", class="spImage")
+                img(src="static/Images/spimg1.jpg", alt="SponsorImage", class="spImage")
+
+    footer#footer 
+            | Copyright &copy; 2022 danceacademy.com | All rights reserved
+    script
+      include ../static/index.js
